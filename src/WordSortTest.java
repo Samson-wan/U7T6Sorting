@@ -25,17 +25,17 @@ public class WordSortTest
     
     System.out.println("\n------- TESTING INSERTION SORT -------");
     ArrayList<String> allWords2 = new ArrayList<String>();
-    
+
     // load words from words.txt into array list; see helper method below
     loadWordsInto(allWords2);
     System.out.println("This list contains " + allWords2.size() + " common words");
-    
+
     System.out.println("Unsorted:");
     System.out.println(allWords2);
-    
+
     // sort the list with insertion sort
     Sort.insertionSortWordList(allWords2);
-    
+
     System.out.println("Sorted:");
     System.out.println(allWords2);
   }
@@ -45,7 +45,7 @@ public class WordSortTest
   {
     try
     {
-      Scanner input = new Scanner(new File("src\\words.txt"));
+      Scanner input = new Scanner(new File("src\\wordSort.txt"));
       while (input.hasNext())
       {
         String word = input.next();
